@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		div,p,ul,ol,li{
+			list-style: none;
+			width: 800px;
+			margin: 0 auto;
+			text-align: center;
+			padding: 0px;
+		}
+		h1{
+			width: 800px;
+			margin: auto;
+			text-align: center;
+			color: red;
+		}
+		p{
+			margin: 20px 0px;
+			color: #ccc;
+		}
+		li{
+			margin-top: 10px; 
+		}
+		#fen{
+			color: pink;
+			font-size: 22px;
+		}
+		span{
+			color: purple;
+		}
+	</style>
+</head>
+<body>
+	<h1>GitHub使用方法</h1>
+	<div>
+		<p>GitHub是一个面向开源及私有软件项目的托管平台,也是一个仓库</p>
+		<ol>
+			<li>首先,打开终端,在桌面上使用<span>mkdir + "文件名"</span>创建一个空的文件夹用来存放github;</li>
+			<li>然后用<span>cd</span>方法进入自己创建的文件夹,使用<span>git init</span>来初始化github仓库和创建一个主线;</li>
+			<li>建立用户名:<span>git config --global user.name "用户名"</span>;</li>
+			<li>建立邮箱名:<span>git config --global user.email "邮箱名"</span>;</li>
+			<li>打开文件夹或者在终端输入<span>touch + "文件名"</span></li>
+			<li>使用<span>git add</span>方法把文件加入上传仓库的列表,<span>git add</span>后面可以加具体的文件名,表示只上传这个文件;也可以加".",表示当前文件夹内所有文件都上传</li>
+			<li>在使用<span>git add</span>之后可以用<span>git status</span>来查看当前上传列表的文件</li>
+			<li><span>git commit -m "注释"</span>方法确认提交</li>
+			<li>可以使用<span>git log</span>来查看确定提交的文件</li>
+			<li>然后把自己在github.com创建的New repository中的关联代码粘贴到终端;</li>
+			<li>回车确定,就可以在github访问或下载自己上传的文件;</li>
+		</ol>
+		<ul>
+			<li id="fen">分支</li>
+			<li>当需要分支时,在终端输入<span>git branch</span>查看当前主线是否有分支</li>
+			<li>如果没有,可以输入<span>git branch + "分支名"</span>来创建分支</li>
+			<li>输入命令<span>git checkout + "分支名"</span>进入分支,可以和主线一样创建,上传文件</li>
+			<li>如果需要回到主线,输入<span>git checkout master</span></li>
+			<li>主线和支线合并输入需要在主线状态下输入<span>git merge + "分支名"</span></li>
+		</ul>
+	</div>
+</body>
+</html>
